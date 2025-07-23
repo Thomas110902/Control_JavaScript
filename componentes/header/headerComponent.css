@@ -1,20 +1,35 @@
 .headercontenedor{
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: rgba(250, 250, 250, 0.808);
+    border-bottom: 1.5px solid gray;
     height: 40px;
+    padding: auto;
     justify-content: space-between;
-    font-size: 20px;
-    font-weight: 600;
-    padding-left: 15px;
+   
 
 }
-
+.Thomasss{
+     font-size: 20px;
+    font-weight: 600;
+    padding-left: 15px;
+}
 .circulodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 10px;
     border: 1px solid black;
     border-radius: 30px;
     width: 30px;
     height: 30px;
     background-color: black;
+}
+.img{
+    display: flex;
+    align-items: center;
+    
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
 }
