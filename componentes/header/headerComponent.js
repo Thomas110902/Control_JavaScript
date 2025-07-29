@@ -25,5 +25,4 @@ function header(){
 
 }
 
-
-export { header }
+export {header}
