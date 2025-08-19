@@ -1,9 +1,11 @@
-.headercontenedor{
+.header{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(250, 250, 250, 0.808);
     border-bottom: 1.5px solid gray;
     height: 40px;
+    margin: auto;
     padding: auto;
     justify-content: space-between;
    

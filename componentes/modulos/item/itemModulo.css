@@ -1,5 +1,17 @@
 .item{
-    width: 20rem;
-    height:20rem;
-    background-color: red;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 40rem;
+    height:30rem;
+    background-color: rgb(31, 83, 83);
+}
+img{
+    max-width: 70%;
+    height: 60%;
+}
+.verde{
+    background-color: green;
 }

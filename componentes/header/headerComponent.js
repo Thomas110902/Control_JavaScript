@@ -1,6 +1,6 @@
-function header(){
+export function header(){
     let header = document.createElement('header');
-    header.className = "headercontenedor"
+    header.className = "header"
 
     //text
     let text = document.createElement('text');
@@ -25,4 +25,3 @@ function header(){
 
 }
 
-export {header}
