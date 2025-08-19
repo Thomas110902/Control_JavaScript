@@ -1,22 +1,22 @@
-export function item(titulo,urlImg){
+export function item(title,image,price,description){
 
     let item = document.createElement('div');
     item.className = "item";
-    item.textContent = titulo;
+    item.textContent = title;
     
     let img = document.createElement('img');
-    img.src = urlImg;
+    img.src =image;
     item.appendChild(img);
 
-    let price = document.createElement('div');
-    price.className = "price"
-    price.textContent =  price;
-    item.appendChild(price);
+    let precio = document.createElement('p');
+    precio.className = "price";
+    precio.textContent = `Precio: $${price}`;
+    item.appendChild(precio);
 
-    let description = document.createElement('div');
-    description.className = "description"
-    description.textContent =  description;
-    item.appendChild(description);
+    let descripcion = document.createElement('p');
+    descripcion.className = "description"
+    descripcion.textContent =  description;
+    item.appendChild(descripcion);
 
     item.addEventListener('click', ()=>{
         item.classList.add("verde");
