@@ -4,7 +4,6 @@ export function item(title,image,price,description){
     let item = document.createElement('div');
     item.className = "item";
     
-    
     let titulo = document.createElement('p');
     titulo.className = "title"
     titulo.textContent = title;
@@ -14,15 +13,17 @@ export function item(title,image,price,description){
     img.src =image;
     item.appendChild(img);
 
+    let descripcion = document.createElement('p');
+    descripcion.className = "description"
+    descripcion.textContent =  description;
+    item.appendChild(descripcion);
+
     let precio = document.createElement('p');
     precio.className = "price";
     precio.textContent = `Precio: $${price}`;
     item.appendChild(precio);
 
-    let descripcion = document.createElement('p');
-    descripcion.className = "description"
-    descripcion.textContent =  description;
-    item.appendChild(descripcion);
+    
 
     item.addEventListener('click', ()=>{
         ListadeCompras.push("comal");
