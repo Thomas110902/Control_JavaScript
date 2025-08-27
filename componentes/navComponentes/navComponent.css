@@ -5,17 +5,23 @@
     margin-top: 20px;
     width: 100%;
     height: 120px;
-    gap: 60px;
+    gap: 150px;
 
     background: linear-gradient(135deg, #1f5353, #2e8b8b);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     padding: 10px;
+    overflow-x: auto; /* 🔥 Permite desplazarse si no caben */
+    scrollbar-width: none; /* Oculta scroll en Firefox */
+}
+
+.nav::-webkit-scrollbar {
+    display: none; /* Oculta scroll en Chrome/Safari */
 }
 
 .nav div {
-    width: 90px;
-    height: 90px;
-    font-size: 45px;
+    min-width: 70px;   /* En móviles se mantiene tamaño mínimo */
+    height: 70px;
+    font-size: 35px;
     color: white;
     display: flex;
     align-items: center;
@@ -29,4 +35,17 @@
     transition: all 0.3s ease;
 }
 
+/* 📱 Ajustes para móviles */
+@media (max-width: 768px) {
+    .nav {
+        gap: 20px;        /* Menos espacio entre íconos */
+        height: 90px;     /* Menú más delgado */
+        padding: 8px;
+    }
 
+    .nav div {
+        min-width: 55px;
+        height: 55px;
+        font-size: 24px;  /* Íconos más pequeños */
+    }
+}
