@@ -2,7 +2,12 @@ export function item(title,image,price,description){
 
     let item = document.createElement('div');
     item.className = "item";
-    item.textContent = title;
+    
+    
+    let titulo = document.createElement('p');
+    titulo.className = "title"
+    titulo.textContent = title;
+    item.appendChild(titulo);
     
     let img = document.createElement('img');
     img.src =image;
@@ -19,7 +24,7 @@ export function item(title,image,price,description){
     item.appendChild(descripcion);
 
     item.addEventListener('click', ()=>{
-        item.classList.add("verde");
+        item.classList.add("azul");
         let headercontenedor = document.querySelector('.header');
         headercontenedor.classList.add("ocultar");
     });

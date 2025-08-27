@@ -5,7 +5,7 @@ export function header(){
     //text
     let text = document.createElement('text');
     text.className = "Thomasss"
-    text.innerText = "Thomasss";
+    text.innerText = "ModaStore";
 
 
     //div
