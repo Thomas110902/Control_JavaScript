@@ -1,23 +1,37 @@
 import { header } from "./componentes/header/headerComponent.js";
-import { nav } from "./componentes/navComponentes/navComponent.js";
 import { seccion1 } from "./componentes/seccion1/seccion1.js";
+import { obtenerNav } from "./componentes/navComponentes/navComponent.js";
 
 
-function seccion (){
+let listaDeCompras = localStorage.getItem("carrito");
+
+
+function seccion(){
+ 
+    let seccion = document.createElement('section');
+
     
-    let seccion = document.createElement("section");
-    //header
+    // LocalStorange1
+    if (!listaDeCompras) {
+        listaDeCompras = [];
+        localStorage.setItem("carrito", JSON.stringify(listaDeCompras));
+    }
+    console.log(listaDeCompras);
+
+
+
+    // header
     seccion.appendChild(header());
-    
-    //seccion
 
+    // sección
     seccion.appendChild(seccion1());
 
-    //nav
-    seccion.appendChild(nav());
+    // nav
+    seccion.appendChild(obtenerNav());
 
-
-   return seccion;
+    return seccion;
 }
 
 document.body.appendChild(seccion());
+
+export { listaDeCompras };

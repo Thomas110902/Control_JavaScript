@@ -8,7 +8,7 @@ export function seccion1(){
 
 
    productos.forEach(element => {
-    seccion1.appendChild(item(element.title,element.image,element.price,element.description))
+    seccion1.appendChild(item(element.id,element.title,element.image,element.price,element.description))
    });
         
     return seccion1;
