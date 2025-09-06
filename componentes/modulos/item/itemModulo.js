@@ -1,4 +1,6 @@
-import { guardarProducto, obtenerProductos } from "../../control/milocalStorage.js";
+import { guardarProducto, obtenerProductos } from "../../control/miLocalStorange.js";
+import { listaDeCompras } from "../../../main.js";
+
 export function item(id,title,image,price,description){
 
     let item = document.createElement('div');
@@ -27,7 +29,7 @@ export function item(id,title,image,price,description){
         let carritoLocalStorange = obtenerProductos();
         console.log("carrito", carritoLocalStorange);
 
-        carritoLocalStorange.push({id:id,precio:price,nombre:title, img:image});
+        carritoLocalStorage.push({id:id,precio:price,nombre:title, img:image});
         guardarProducto(carritoLocalStorange);
         console.log("Procuto en localStorang");
         location.reload();

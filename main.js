@@ -5,12 +5,12 @@ import { obtenerNav } from "./componentes/navComponentes/navComponent.js";
 
 let listaDeCompras = localStorage.getItem("carrito");
 
+console.log("----------------");
 
 function seccion(){
  
-    let seccion = document.createElement('section');
+    let seccion = document.createElement('section');console.log("----------------");
 
-    
     // LocalStorange1
     if (!listaDeCompras) {
         listaDeCompras = [];
@@ -27,7 +27,7 @@ function seccion(){
     seccion.appendChild(seccion1());
 
     // nav
-    seccion.appendChild(obtenerNav());
+      seccion.appendChild(obtenerNav());
 
     return seccion;
 }

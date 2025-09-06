@@ -1,4 +1,5 @@
 import { obtenerProductos } from "../control/milocalStorage.js";
+
 export function obtenerNav(){
     let nav = document.createElement('div');
     nav.className = "nav";
@@ -11,7 +12,7 @@ export function obtenerNav(){
 
      // cuadro caja
     let caja = document.createElement('a');
-    caja.innerText= "📦";
+    caja.innerText=  "📦";
     caja.className= "caja" ;
     nav.appendChild(caja);
 
