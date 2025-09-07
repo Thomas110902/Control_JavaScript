@@ -1,5 +1,4 @@
 import { obtenerProductos } from "../control/milocalStorage.js";
-
 export function obtenerNav(){
     let nav = document.createElement('div');
     nav.className = "nav";
@@ -12,7 +11,7 @@ export function obtenerNav(){
 
      // cuadro caja
     let caja = document.createElement('a');
-    caja.innerText=  "📦";
+    caja.innerText= "📦";
     caja.className= "caja" ;
     nav.appendChild(caja);
 
@@ -29,6 +28,10 @@ export function obtenerNav(){
     carrito.className= "carrito" ;
     
     let divItem = document.createElement('div');
+        divItem.textContent = "";
+    //Cuantos elementos hay en el carrito
+  
+    divItem.textContent=obtenerProductos().length;
     divItem.className = "div-item";
   
     

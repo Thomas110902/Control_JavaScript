@@ -2,15 +2,14 @@ import { header } from "./componentes/header/headerComponent.js";
 import { seccion1 } from "./componentes/seccion1/seccion1.js";
 import { obtenerNav } from "./componentes/navComponentes/navComponent.js";
 
-
 let listaDeCompras = localStorage.getItem("carrito");
 
-console.log("----------------");
 
 function seccion(){
  
-    let seccion = document.createElement('section');console.log("----------------");
+    let seccion = document.createElement('section');
 
+    
     // LocalStorange1
     if (!listaDeCompras) {
         listaDeCompras = [];
@@ -27,7 +26,7 @@ function seccion(){
     seccion.appendChild(seccion1());
 
     // nav
-      seccion.appendChild(obtenerNav());
+    seccion.appendChild(obtenerNav());
 
     return seccion;
 }

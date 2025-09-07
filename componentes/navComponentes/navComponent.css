@@ -53,3 +53,22 @@
         font-size: 24px;  /* Íconos más pequeños */
     }
 }
+
+
+.div-item{
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 15px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+   top: 1px;
+   right: -8px;
+}
+

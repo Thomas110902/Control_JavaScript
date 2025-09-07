@@ -1,4 +1,4 @@
-function header(){
+export function header(){
     let header = document.createElement('header');
     header.className = "header"
 
@@ -24,6 +24,4 @@ function header(){
 
 
 }
-
-export {header}
 
