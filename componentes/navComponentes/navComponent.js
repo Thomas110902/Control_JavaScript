@@ -23,7 +23,7 @@ export function obtenerNav(){
 
      // cuadro carrito
     let carrito = document.createElement('a');
-    carrito.href = "pages/carrito.html"
+    carrito.href ="pages/carrito/carrito.html";
     carrito.innerText= "🛒";
     carrito.className= "carrito" ;
     
